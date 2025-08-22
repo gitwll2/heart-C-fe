@@ -1,0 +1,33 @@
+.appMain {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  width: 100vw;
+}
+.leftMenu {
+  width: var(--sidebar-width);
+  background-color: #fff;
+  border-right: 1px solid #e8e8e8;
+  overflow-y: auto;
+}
+.menuGroup {
+  margin-bottom: 16px;
+}
+.menuTitle {
+  padding: 12px 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #e8e8e8;
+}
+.menuItem {
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.menuItem:hover {
+  color: var(--primary-color);
+  background-color: #f0f9ff;
+}
+.menuItem.active {
+  color: var(--primary-color);
+  border-right: 3px solid var(--primary-color);
+}

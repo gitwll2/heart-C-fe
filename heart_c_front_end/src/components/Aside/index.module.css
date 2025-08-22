@@ -1,0 +1,32 @@
+/* 侧边栏样式 */
+.sidebar {
+  width: var(--sidebar-width);
+  background: white;
+  border-right: 1px solid var(--border-color);
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.sidebar.collapsed {
+  width: var(--sidebar-collapsed-width);
+}
+
+.sidebarHeader {
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggleBtn {
+  display: inline-flex; /* 关键！让按钮内部的元素使用 flex 布局 */
+  align-items: center; /* 垂直居中 */
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+}
